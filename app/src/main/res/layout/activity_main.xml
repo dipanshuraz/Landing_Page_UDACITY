@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.android.landing_page.MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin5"
+        app:srcCompat="@drawable/image_1" android:contentDescription="@string/todo" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin4"
+        android:background="@color/bg_3"
+        android:drawableStart="@drawable/ic_action_person"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:text="@string/username"
+        android:textColor="@color/cle3"
+        android:textSize="@dimen/txt_s3" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/editText"
+        android:layout_below="@+id/editText"
+        android:layout_marginTop="@dimen/margin2"
+        android:background="@color/bg2"
+        android:drawableStart="@drawable/ic_action_name"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:text="@string/password"
+        android:textColor="@color/txt_c2"
+        android:textSize="@dimen/txt_sz" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/lay_w"
+        android:layout_height="@dimen/lay_h"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_top"
+        app:cardBackgroundColor="@color/bg"
+        app:cardCornerRadius="@dimen/card_rad"
+        app:cardElevation="@dimen/card_el"
+        android:id="@+id/cardView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/login"
+                android:textAllCaps="true"
+                android:textColor="@color/txt_cl"
+                android:textSize="@dimen/txt_s"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin_t"
+        android:text="@string/register_here"
+        android:textSize="@dimen/txt_size"
+        android:textStyle="bold" />
+
+</RelativeLayout>
